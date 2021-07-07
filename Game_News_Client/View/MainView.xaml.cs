@@ -16,13 +16,14 @@ using System.Windows.Shapes;
 namespace Game_News_Client
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для MainView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainView : Window
     {
-        public MainWindow()
+        public MainView()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
         }
     }
 }
